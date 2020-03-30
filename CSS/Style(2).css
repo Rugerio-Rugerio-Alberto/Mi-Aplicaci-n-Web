@@ -1,0 +1,186 @@
+
+
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*,*:before, :after{
+	box-sizing: inherit;
+}
+
+body{
+	font-family:´Lato´, sans serif;
+	font-size:1.6rem;
+	line-height: 2;
+}
+
+img{
+	max-width: 100%;
+}
+
+.contenedor{
+	width: 95%;
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+.site-header{
+	background-color: black;
+	padding: 1rem 0 3rem 0;
+}
+
+.site-header.inicio{
+	background-image: url(../img/lapiz.png);
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+	min-height: 60rem; 
+}
+
+.contenido-header{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}
+
+@media(min-width: : 768px){
+	.contenido-header{
+		text-align: left;
+	}
+}
+
+.contenido-header h1{
+	color: #ffffff;
+	padding-bottom: 2rem;
+	max-width: 60rem;
+	line-height: 2;
+}
+
+@media (min-width: 768px){
+	.barra{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+.navegacion a{
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 2.2rem;
+	display: block;
+}
+
+@media(min-width: 768px){
+	.navegacion a{
+		display: inline-block;
+		font-size: 1.8rem;
+		margin-right: 2rem;
+	}
+	.navegacion a:last-of-hover{
+		margin: 0;
+	}
+}
+
+.navegacion a:hover{
+	color: #71B100;
+}
+
+/**Utilidades**/
+
+.seccion{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.fw-300{
+	font-weight: 300;
+}
+
+.centrar-texto{
+	text-align: center;
+}
+
+.d-block{
+	display: block!important;
+}
+
+.contenido-centrado{
+	max-width: 800px;
+}
+
+/** Iconos Nosotros **/
+
+@media (min-width: 768px){
+	.iconos-nosotros{
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.icono{
+	text-align: center;
+}
+
+@media (min-width: 768px){
+	.icono{
+		flex-basis: calc(33.3%-1rem);
+	}
+}
+.icono h3{
+	text-transform: uppercase;
+}
+
+
+
+
+/**Footer**/
+body{height: 900px;}
+footer{
+	
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+
+footer .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient( 135deg, #017FFC 10%, #F4FC01 120%);
+	
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+h3, p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: white;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+	cursor: pointer;
+}
